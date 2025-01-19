@@ -1,4 +1,4 @@
-/* Zorg ervoor dat de body geen marges heeft en dat de afbeelding responsief is */
+/* Zorg ervoor dat de body geen marges heeft en de afbeelding responsief is */
 body, html {
    margin: 0;
    padding: 0;
@@ -6,28 +6,29 @@ body, html {
    height: 100%;
 }
 
+/* De container neemt de volledige breedte van de pagina in */
 .container {
    width: 100%;
-   overflow: hidden;
+   height: 100%;
 }
 
-/* De afbeelding neemt 100% van de breedte in, en de hoogte past zich aan */
+/* De afbeelding neemt de volledige breedte in en de hoogte wordt automatisch aangepast */
 .full-width-image {
    width: 100%;
-   height: auto;
+   height: 100vh; /* Zorgt ervoor dat de afbeelding altijd de volledige hoogte van het scherm vult */
+   object-fit: cover; /* Zorgt ervoor dat de afbeelding de ruimte vult zonder vervorming */
    display: block;
-   object-fit: cover; /* Zorgt ervoor dat de afbeelding zich goed schaalt zonder vervorming */
 }
 
-/* Media Queries voor kleinere schermen (bijvoorbeeld mobiele schermen) */
+/* Maak de afbeelding responsief op kleinere schermen */
 @media (max-width: 768px) {
    .full-width-image {
-       object-fit: cover; /* Houd de afbeelding proportioneel voor kleinere schermen */
+       height: 50vh; /* Bij kleinere schermen de hoogte aanpassen (50% van het scherm) */
    }
 }
 
 @media (max-width: 480px) {
    .full-width-image {
-       object-position: center; /* Zorg ervoor dat de afbeelding mooi uitgelijnd blijft op heel kleine schermen */
+       height: 40vh; /* Bij mobiele schermen de hoogte verder verkleinen */
    }
 }
