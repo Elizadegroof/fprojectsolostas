@@ -1,32 +1,33 @@
-* {
+/* Zorg ervoor dat de body geen marges heeft en dat de afbeelding responsief is */
+body, html {
    margin: 0;
    padding: 0;
-   box-sizing: border-box;
-}
-
-html, body {
-   height: 100%;
    width: 100%;
-}
-
-.background-container {
-   position: relative;
    height: 100%;
+}
+
+.container {
    width: 100%;
+   overflow: hidden;
 }
 
-.background-image {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;  /* Zorgt ervoor dat de afbeelding altijd de volledige breedte vult */
-   height: auto; /* Houdt de proporties van de afbeelding intact */
-   max-height: 100vh; /* Zorgt ervoor dat de afbeelding niet groter is dan de hoogte van het scherm */
+/* De afbeelding neemt 100% van de breedte in, en de hoogte past zich aan */
+.full-width-image {
+   width: 100%;
+   height: auto;
+   display: block;
+   object-fit: cover; /* Zorgt ervoor dat de afbeelding zich goed schaalt zonder vervorming */
 }
 
+/* Media Queries voor kleinere schermen (bijvoorbeeld mobiele schermen) */
 @media (max-width: 768px) {
-   .background-image {
-       width: 100%; /* Zorgt ervoor dat de afbeelding altijd de volledige breedte vult */
-       height: auto; /* Houdt de verhoudingen intact */
+   .full-width-image {
+       object-fit: cover; /* Houd de afbeelding proportioneel voor kleinere schermen */
+   }
+}
+
+@media (max-width: 480px) {
+   .full-width-image {
+       object-position: center; /* Zorg ervoor dat de afbeelding mooi uitgelijnd blijft op heel kleine schermen */
    }
 }
