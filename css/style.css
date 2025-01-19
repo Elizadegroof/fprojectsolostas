@@ -1,21 +1,21 @@
-/* Zorg ervoor dat de body en html geen marges of padding hebben */
-body, html {
+* {
    margin: 0;
    padding: 0;
+   box-sizing: border-box;
+}
+
+body, html {
    width: 100%;
    height: 100%;
 }
 
-/* De container neemt de volledige breedte van de pagina in */
-.container {
+.image-container {
    width: 100%;
-   height: 100%; /* Zorg ervoor dat de container de volledige hoogte vult */
+   overflow: hidden;
 }
 
-/* De afbeelding neemt de volledige breedte in en schaalt de hoogte proportioneel */
-.full-width-image {
-   width: 100%;  /* 100% van de breedte van de container */
-   height: auto;  /* Zorg ervoor dat de hoogte zich proportioneel aanpast */
-   display: block; /* Verwijdert eventuele extra ruimte onder de afbeelding */
-   object-fit: cover; /* Zorg ervoor dat de afbeelding altijd de ruimte vult, maar zonder vervorming */
+img {
+   width: 100%;
+   height: auto;
+   display: block;
 }
