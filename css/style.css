@@ -1,10 +1,14 @@
+.intro {
+position: relative;
+text-align: center;
+
+}
+
+
 .cycle-wrapper {
-   width: 80%;
+   width: 100%;
    position: relative;
-   margin: 110px auto 0 auto;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   padding: 10px;
-   background-color: #efcd8e;
    text-align: center; /* Voeg deze regel toe voor horizontale uitlijning */
 }
 
@@ -21,15 +25,15 @@
 }
 
 .rw-words {
-   display: inline;
-   text-indent: 10px;
+   display: flex;
+
 }
 
 .rw-words-1 span {
    position: absolute;
    opacity: 0;
    overflow: hidden;
-   color: #6b969d;
+   color: #000000;
    -webkit-animation: rotateWord 18s linear infinite 0s;
    -ms-animation: rotateWord 18s linear infinite 0s;
    animation: rotateWord 18s linear infinite 0s;
@@ -39,35 +43,35 @@
    -webkit-animation-delay: 3s;
    -ms-animation-delay: 3s;
    animation-delay: 3s;
-   color: #6b889d;
+   color: #000000;
 }
 
 .rw-words-1 span:nth-child(3) {
    -webkit-animation-delay: 6s;
    -ms-animation-delay: 6s;
    animation-delay: 6s;
-   color: #6b739d;
+   color: #000000;
 }
 
 .rw-words-1 span:nth-child(4) {
    -webkit-animation-delay: 9s;
    -ms-animation-delay: 9s;
    animation-delay: 9s;
-   color: #7a6b9d;
+   color: #000000;
 }
 
 .rw-words-1 span:nth-child(5) {
    -webkit-animation-delay: 12s;
    -ms-animation-delay: 12s;
    animation-delay: 12s;
-   color: #8d6b9d;
+   color: #000000;
 }
 
 .rw-words-1 span:nth-child(6) {
    -webkit-animation-delay: 15s;
    -ms-animation-delay: 15s;
    animation-delay: 15s;
-   color: #9b6b9d;
+   color: #000000;
 }
 
 @-webkit-keyframes rotateWord {
