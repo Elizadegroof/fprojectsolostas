@@ -6,6 +6,7 @@
 
 body, html {
    width: 100%;
+   margin-top: 15%;
    height: auto; /* Zorg ervoor dat de body en de html het volledige scherm vullen */
    font-family: 'Bree Serif', serif;
    background-image: url('/pictures/Desktop\ -\ 6.png'); 
@@ -21,7 +22,7 @@ body, html {
 /* Logo styling */
 .logo {
    position: absolute;
-   top: 32px /* 3% margin from the top */
+   top: 32px; /* 3% margin from the top */
    left: 32px; /* 3% margin from the left */
    width: 55px; /* Set a width for the logo (adjust as necessary) */
    height: auto; /* Maintain aspect ratio */
