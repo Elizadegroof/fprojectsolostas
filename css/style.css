@@ -5,7 +5,7 @@
 }
 
 body, html {
-   height: 100%; /* Zorg ervoor dat het lichaam en de html het volledige scherm vullen */
+   height: 100%; /* Zorg ervoor dat de body en de html het volledige scherm vullen */
    font-family: 'Bree Serif', serif;
    background-color: #f4f4f4; /* Witte achtergrond zonder gekleurde achtergrond */
    display: flex;
@@ -16,11 +16,12 @@ body, html {
 
 .intro {
    position: relative;
-   text-align: left; /* De tekst links uitlijnen */
+   text-align: center; /* Horizontaal centreren */
    margin-top: 50px; /* De intro tekst iets hoger plaatsen */
    width: 80%; /* Breedte van de intro tekst */
-   font-size: 24px;
-   text-align: left; /* Zodat de tekst aan de linkerzijde uitgelijnd is */
+   font-size: 64px; /* Grotere tekstgrootte voor de intro */
+   font-weight: bold; /* Vetgedrukte tekst */
+   color: #333; /* Donkergrijze kleur voor de tekst */
 }
 
 .download-button {
