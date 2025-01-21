@@ -3,33 +3,37 @@ position: relative;
 text-align: center;
 }
 
-span{
-   display: flex;
-   justify-content: center;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body, html {
+   height: 100%; /* Ensure the body and html take up full height */
 }
 
 .cycle-wrapper {
    width: 100%;
    position: relative;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   text-align: center; /* Voeg deze regel toe voor horizontale uitlijning */
+   text-align: center; /* Horizontally center text */
 }
 
 .rw-sentence {
    margin: 0;
-   text-align: center; /* Voeg deze regel toe om de tekst horizontaal in het midden uit te lijnen */
-   text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+   text-align: center; /* Horizontally center the sentence */
+   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
 }
 
 .rw-sentence span {
-   color: black; /* Zet de tekstkleur op zwart */
-   font-size: 80px; /* Verander de lettergrootte naar 80px */
+   color: black; /* Set text color to black */
+   font-size: 80px; /* Set font size to 80px */
    font-weight: normal;
 }
 
 .rw-words {
    display: flex;
-
 }
 
 .rw-words-1 span {
