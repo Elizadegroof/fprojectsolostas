@@ -5,69 +5,59 @@
 }
 
 body, html {
-   height: 100%; /* Ensure body and html take up full height */
+   height: 100%; /* Zorg ervoor dat de body en de html het volledige scherm vullen */
    font-family: 'Bree Serif', serif;
-   background-color: #f4f4f4; /* White background */
+   background-image: url('/pictures/Desktop\ -\ 6.png'); 
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
    display: flex;
-   flex-direction: column; /* Stack content vertically */
-   justify-content: flex-start; /* Start content from the top of the page */
-   align-items: center; /* Center content horizontally */
+   flex-direction: column; /* Zorg ervoor dat de inhoud verticaal wordt gestapeld */
+   justify-content: flex-start; /* Zorg ervoor dat de inhoud vanaf de bovenkant van het scherm begint */
+   align-items: center; /* Horizontaal centreren */
 }
 
-/* The div containing the image - initially with the <img> tag */
 .image-container {
-   width: 100%; /* Make it span the entire width */
-   height: 400px; /* Set a fixed height for the background section */
-   position: relative;
-}
-
-/* Hide the image */
-.image-container img {
-    display: none; /* Hide the image */
-}
-
-/* Set the image as a background */
-.image-container {
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Don't repeat the image */
-    display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    color: white; /* Set text color to white for visibility */
-}
-
-/* Styling for intro text */
-.intro {
-    text-align: center; /* Center the text */
-    font-size: 48px;
-    font-weight: bold;
-    position: absolute; /* Position on top of the background */
-    top: 20%; /* Adjust this for desired vertical position */
     width: 100%;
 }
 
-/* Styling for download button */
+.intro {
+   position: relative;
+   text-align: center; /* Horizontaal centreren */
+   margin-top: 20%; /* De intro tekst iets hoger plaatsen */
+   width: 80%; /* Breedte van de intro tekst */
+   font-size: 48px; /* Grotere tekstgrootte voor de intro */
+   font-weight: bold; /* Vetgedrukte tekst */
+   color: #000000; /* Donkergrijze kleur voor de tekst */
+}
+
+.inleiding {
+position: relative;
+text-align: center; /* Horizontaal centreren */
+width: 800px;
+font-size: 24px; /* Grotere tekstgrootte voor de intro */
+padding-top: 20%; /* De intro tekst iets hoger plaatsen */
+}
+
 .download-button {
-   background-color: #e91b59; /* Dark pink background */
-   color: white; /* White text */
-   padding: 20px 20px; /* Vertical and horizontal padding */
-   border-radius: 10px; /* Rounded corners */
-   text-align: center; /* Center the text inside the button */
-   font-size: 12px; /* Text size */
-   font-weight: bold; /* Bold text */
-   cursor: pointer; /* Change cursor to pointer on hover */
-   position: absolute; /* Positioned absolutely within the page */
-   top: 3%; /* 3% from the top of the screen */
-   right: 3%; /* 3% from the right of the screen */
-   transition: background-color 0.3s ease; /* Fade effect for background color */
+   background-color: #e91b59; /* Donkerroze achtergrond */
+   color: white; /* Witte tekst */
+   padding: 20px 20px; /* Verticaal en horizontaal padding */
+   border-radius: 10px; /* Ronde hoeken */
+   text-align: center; /* Centreer de tekst binnen de knop */
+   font-size: 12px; /* Tekstgrootte */
+   font-weight: bold; /* Vetgedrukte tekst */
+   cursor: pointer; /* Wijzig de cursor naar pointer bij hover */
+   position: absolute; /* Absoluut gepositioneerd binnen het scherm */
+   top: 3%; /* 3% van de bovenkant van het scherm */
+   right: 3%; /* 3% van de rechterkant van het scherm */
+   transition: background-color 0.3s ease; /* Vervaging voor achtergrondkleur bij hover */
 }
 
 .download-button:hover {
-   background-color: #a6274e; /* Slightly darker pink on hover */
+   background-color: #a6274e; /* Iets donkerder roze bij hover */
 }
 
-/* Cycle wrapper and sentence text styles */
 .cycle-wrapper {
    width: 100%;
    position: relative;
@@ -79,7 +69,7 @@ body, html {
 
 .rw-sentence {
    margin: 0;
-   text-align: center; /* Horizontally center the text */
+   text-align: center; /* Horizontaal centreren van de zin */
    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
 }
 
@@ -95,8 +85,8 @@ body, html {
 }
 
 .rw-words-1 {
-   display: flex; /* Flexbox to align the animation elements horizontally */
-   justify-content: center; /* Horizontally center the elements */
+   display: flex; /* Flexbox om de animatie-elementen horizontaal uit te lijnen */
+   justify-content: center; /* Horizontaal centreren */
 }
 
 .rw-words-1 span {
@@ -116,7 +106,90 @@ body, html {
    color: #000000;
 }
 
-/* Additional animation keyframes for the rotating words effect */
+.rw-words-1 span:nth-child(3) {
+   -webkit-animation-delay: 6s;
+   -ms-animation-delay: 6s;
+   animation-delay: 6s;
+   color: #000000;
+}
+
+.rw-words-1 span:nth-child(4) {
+   -webkit-animation-delay: 9s;
+   -ms-animation-delay: 9s;
+   animation-delay: 9s;
+   color: #000000;
+}
+
+.rw-words-1 span:nth-child(5) {
+   -webkit-animation-delay: 12s;
+   -ms-animation-delay: 12s;
+   animation-delay: 12s;
+   color: #000000;
+}
+
+.rw-words-1 span:nth-child(6) {
+   -webkit-animation-delay: 15s;
+   -ms-animation-delay: 15s;
+   animation-delay: 15s;
+   color: #000000;
+}
+
+@-webkit-keyframes rotateWord {
+   0% {
+       opacity: 0;
+   }
+   2% {
+       opacity: 0;
+       -webkit-transform: translateY(-30px);
+   }
+   5% {
+       opacity: 1;
+       -webkit-transform: translateY(0px);
+   }
+   17% {
+       opacity: 1;
+       -webkit-transform: translateY(0px);
+   }
+   20% {
+       opacity: 0;
+       -webkit-transform: translateY(30px);
+   }
+   80% {
+       opacity: 0;
+   }
+   100% {
+       opacity: 0;
+   }
+}
+
+@-ms-keyframes rotateWord {
+   0% {
+       opacity: 0;
+   }
+   2% {
+       opacity: 0;
+       -ms-transform: translateY(-30px);
+   }
+   5% {
+       opacity: 1;
+       -ms-transform: translateY(0px);
+   }
+   17% {
+       opacity: 1;
+       -ms-transform: translateY(0px);
+   }
+   20% {
+       opacity: 0;
+       -ms-transform: translateY(30px);
+   }
+   80% {
+       opacity: 0;
+   }
+   100% {
+       opacity: 0;
+   }
+}
+
 @keyframes rotateWord {
    0% {
        opacity: 0;
@@ -147,14 +220,4 @@ body, html {
    100% {
        opacity: 0;
    }
-}
-
-/* Inleiding text */
-.inleiding {
-   position: relative;
-   text-align: center; /* Horizontally center the text */
-   width: 800px;
-   font-size: 24px; /* Set text size for the inleiding section */
-   padding-top: 20%; /* Add spacing from the top */
-   color: #000000;
 }
