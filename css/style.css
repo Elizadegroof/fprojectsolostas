@@ -6,7 +6,7 @@
 
 body, html {
    width: 100vw;
-   height: 100%; /* Zorg ervoor dat de body en de html het volledige scherm vullen */
+   height: auto; /* Zorg ervoor dat de body en de html het volledige scherm vullen */
    font-family: 'Bree Serif', serif;
    background-image: url('/pictures/Desktop\ -\ 6.png'); 
    background-size: cover;
@@ -21,7 +21,7 @@ body, html {
 .intro {
    position: relative;
    text-align: center; /* Horizontaal centreren */
-   margin-top: 20%; /* De intro tekst iets hoger plaatsen */
+   margin-top: 10%; /* De intro tekst iets hoger plaatsen */
    width: 80%; /* Breedte van de intro tekst */
    font-size: 48px; /* Grotere tekstgrootte voor de intro */
    font-weight: bold; /* Vetgedrukte tekst */
@@ -33,7 +33,7 @@ position: relative;
 text-align: center; /* Horizontaal centreren */
 width: 800px;
 font-size: 24px; /* Grotere tekstgrootte voor de intro */
-padding-top: 20%; /* De intro tekst iets hoger plaatsen */
+padding-top: 10%; /* De intro tekst iets hoger plaatsen */
 }
 
 .download-button {
