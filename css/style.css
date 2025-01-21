@@ -1,9 +1,12 @@
 .intro {
 position: relative;
 text-align: center;
-
 }
 
+span{
+   display: flex;
+   justify-content: center;
+}
 
 .cycle-wrapper {
    width: 100%;
