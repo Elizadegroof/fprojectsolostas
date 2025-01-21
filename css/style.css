@@ -19,9 +19,9 @@ body, html {
    text-align: center; /* Horizontaal centreren */
    margin-top: 50px; /* De intro tekst iets hoger plaatsen */
    width: 80%; /* Breedte van de intro tekst */
-   font-size: 64px; /* Grotere tekstgrootte voor de intro */
+   font-size: 48px; /* Grotere tekstgrootte voor de intro */
    font-weight: bold; /* Vetgedrukte tekst */
-   color: #333; /* Donkergrijze kleur voor de tekst */
+   color: #000000; /* Donkergrijze kleur voor de tekst */
 }
 
 .download-button {
@@ -60,7 +60,7 @@ body, html {
 
 .rw-sentence span {
    color: #444;
-   font-size: 200%;
+   font-size: 128px;
    font-weight: normal;
 }
 
@@ -78,7 +78,7 @@ body, html {
    position: absolute;
    opacity: 0;
    overflow: hidden;
-   color: #6b969d;
+   color: #000000;
    -webkit-animation: rotateWord 18s linear infinite 0s;
    -ms-animation: rotateWord 18s linear infinite 0s;
    animation: rotateWord 18s linear infinite 0s;
@@ -88,35 +88,35 @@ body, html {
    -webkit-animation-delay: 3s;
    -ms-animation-delay: 3s;
    animation-delay: 3s;
-   color: #6b889d;
+   color: #000000;
 }
 
 .rw-words-1 span:nth-child(3) {
    -webkit-animation-delay: 6s;
    -ms-animation-delay: 6s;
    animation-delay: 6s;
-   color: #6b739d;
+   color: #000000;
 }
 
 .rw-words-1 span:nth-child(4) {
    -webkit-animation-delay: 9s;
    -ms-animation-delay: 9s;
    animation-delay: 9s;
-   color: #7a6b9d;
+   color: #000000;
 }
 
 .rw-words-1 span:nth-child(5) {
    -webkit-animation-delay: 12s;
    -ms-animation-delay: 12s;
    animation-delay: 12s;
-   color: #8d6b9d;
+   color: #000000;
 }
 
 .rw-words-1 span:nth-child(6) {
    -webkit-animation-delay: 15s;
    -ms-animation-delay: 15s;
    animation-delay: 15s;
-   color: #9b6b9d;
+   color: #000000;
 }
 
 @-webkit-keyframes rotateWord {
