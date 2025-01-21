@@ -5,6 +5,7 @@
 }
 
 body, html {
+   margin: 10%;
    width: 100vw;
    height: auto; /* Zorg ervoor dat de body en de html het volledige scherm vullen */
    font-family: 'Bree Serif', serif;
@@ -16,6 +17,15 @@ body, html {
    flex-direction: column; /* Zorg ervoor dat de inhoud verticaal wordt gestapeld */
    justify-content: flex-start; /* Zorg ervoor dat de inhoud vanaf de bovenkant van het scherm begint */
    align-items: center; /* Horizontaal centreren */
+}
+
+/* Logo styling */
+.logo {
+   position: absolute;
+   top: 3%; /* 3% margin from the top */
+   left: 3%; /* 3% margin from the left */
+   width: 100px; /* Set a width for the logo (adjust as necessary) */
+   height: auto; /* Maintain aspect ratio */
 }
 
 .intro {
