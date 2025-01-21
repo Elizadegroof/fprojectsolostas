@@ -5,8 +5,7 @@
 }
 
 body, html {
-   margin: 10%;
-   width: 100vw;
+   width: 100%;
    height: auto; /* Zorg ervoor dat de body en de html het volledige scherm vullen */
    font-family: 'Bree Serif', serif;
    background-image: url('/pictures/Desktop\ -\ 6.png'); 
@@ -22,9 +21,9 @@ body, html {
 /* Logo styling */
 .logo {
    position: absolute;
-   top: 3%; /* 3% margin from the top */
-   left: 3%; /* 3% margin from the left */
-   width: 100px; /* Set a width for the logo (adjust as necessary) */
+   top: 32px /* 3% margin from the top */
+   left: 32px; /* 3% margin from the left */
+   width: 55px; /* Set a width for the logo (adjust as necessary) */
    height: auto; /* Maintain aspect ratio */
 }
 
@@ -56,8 +55,8 @@ padding-top: 10%; /* De intro tekst iets hoger plaatsen */
    font-weight: bold; /* Vetgedrukte tekst */
    cursor: pointer; /* Wijzig de cursor naar pointer bij hover */
    position: absolute; /* Absoluut gepositioneerd binnen het scherm */
-   top: 3%; /* 3% van de bovenkant van het scherm */
-   right: 3%; /* 3% van de rechterkant van het scherm */
+   top: 32px; /* 3% van de bovenkant van het scherm */
+   right: 32px; /* 3% van de rechterkant van het scherm */
    transition: background-color 0.3s ease; /* Vervaging voor achtergrondkleur bij hover */
 }
 
