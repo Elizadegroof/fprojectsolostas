@@ -3,6 +3,33 @@ position: relative;
 text-align: center;
 }
 
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   background-color: #f4f4f4;
+   position: relative; /* Zorgt ervoor dat de absolute positionering binnen het lichaam werkt */
+}
+
+.download-button {
+   background-color: #c72c5a; /* Donkerroze achtergrond */
+   color: white; /* Witte tekst */
+   padding: 20px 40px; /* Verticaal en horizontaal padding */
+   border-radius: 30px; /* Ronde hoeken */
+   text-align: center; /* Centreer de tekst binnen de knop */
+   font-size: 24px; /* Tekstgrootte */
+   font-weight: bold; /* Vetgedrukte tekst */
+   cursor: pointer; /* Wijzig de cursor naar pointer bij hover */
+   position: absolute; /* Absoluut gepositioneerd binnen het scherm */
+   top: 3%; /* 3% van de bovenkant van het scherm */
+   right: 3%; /* 3% van de rechterkant van het scherm */
+   transition: background-color 0.3s ease; /* Vervaging voor achtergrondkleur bij hover */
+}
+
+.download-button:hover {
+   background-color: #a6274e; /* Iets donkerder roze bij hover */
+}
+
+
 * {
    margin: 0;
    padding: 0;
@@ -37,7 +64,8 @@ body, html {
 }
 
 .rw-words-1 span {
-   position: absolute;
+   position: relative;
+   text-align: center;
    opacity: 0;
    overflow: hidden;
    color: #000000;
