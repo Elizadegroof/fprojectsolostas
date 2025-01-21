@@ -5,6 +5,7 @@
 }
 
 body, html {
+   width: 100vw;
    height: 100%; /* Zorg ervoor dat de body en de html het volledige scherm vullen */
    font-family: 'Bree Serif', serif;
    background-image: url('/pictures/Desktop\ -\ 6.png'); 
@@ -15,10 +16,6 @@ body, html {
    flex-direction: column; /* Zorg ervoor dat de inhoud verticaal wordt gestapeld */
    justify-content: flex-start; /* Zorg ervoor dat de inhoud vanaf de bovenkant van het scherm begint */
    align-items: center; /* Horizontaal centreren */
-}
-
-.image-container {
-    width: 100%;
 }
 
 .intro {
