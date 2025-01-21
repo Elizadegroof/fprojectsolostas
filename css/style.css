@@ -21,9 +21,9 @@ body, html {
 /* Logo styling */
 .logo {
    position: absolute;
-   top: 32px; /* 3% margin from the top */
+   top: 28px; /* 3% margin from the top */
    left: 32px; /* 3% margin from the left */
-   width: 75px; /* Set a width for the logo (adjust as necessary) */
+   width: 68px; /* Set a width for the logo (adjust as necessary) */
    height: auto; /* Maintain aspect ratio */
 }
 
