@@ -48,10 +48,10 @@ padding-top: 10%; /* De intro tekst iets hoger plaatsen */
 .download-button {
    background-color: #e91b59; /* Donkerroze achtergrond */
    color: white; /* Witte tekst */
-   padding: 20px 20px; /* Verticaal en horizontaal padding */
+   padding: 32px 20px; /* Verticaal en horizontaal padding */
    border-radius: 10px; /* Ronde hoeken */
    text-align: center; /* Centreer de tekst binnen de knop */
-   font-size: 12px; /* Tekstgrootte */
+   font-size: 16px; /* Tekstgrootte */
    font-weight: bold; /* Vetgedrukte tekst */
    cursor: pointer; /* Wijzig de cursor naar pointer bij hover */
    position: absolute; /* Absoluut gepositioneerd binnen het scherm */
@@ -68,7 +68,7 @@ padding-top: 10%; /* De intro tekst iets hoger plaatsen */
    width: 100%;
    position: relative;
    margin: 0;
-   font-family: 'Bree Serif', serif;
+   font-weight: 700;
    padding: 10px;
    text-align: center;
 }
