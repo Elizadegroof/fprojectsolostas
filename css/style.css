@@ -1,13 +1,26 @@
-.intro {
-position: relative;
-text-align: center;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
-body {
-   font-family: Arial, sans-serif;
-   margin: 0;
-   background-color: #f4f4f4;
-   position: relative; /* Zorgt ervoor dat de absolute positionering binnen het lichaam werkt */
+body, html {
+   height: 100%; /* Zorg ervoor dat het lichaam en de html het volledige scherm vullen */
+   font-family: 'Bree Serif', serif;
+   background-color: #f4f4f4; /* Witte achtergrond zonder gekleurde achtergrond */
+   display: flex;
+   flex-direction: column; /* Zorg ervoor dat de inhoud verticaal wordt gestapeld */
+   justify-content: flex-start; /* Zorg ervoor dat de inhoud vanaf de bovenkant van het scherm begint */
+   align-items: center; /* Horizontaal centreren */
+}
+
+.intro {
+   position: relative;
+   text-align: left; /* De tekst links uitlijnen */
+   margin-top: 50px; /* De intro tekst iets hoger plaatsen */
+   width: 80%; /* Breedte van de intro tekst */
+   font-size: 24px;
+   text-align: left; /* Zodat de tekst aan de linkerzijde uitgelijnd is */
 }
 
 .download-button {
@@ -29,49 +42,18 @@ body {
    background-color: #a6274e; /* Iets donkerder roze bij hover */
 }
 
-
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
-
-body, html {
-   height: 100%; /* Ensure the body and html take up full height */
-}
-
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
-
-body, html {
-   height: 100%; /* Zorg ervoor dat het lichaam en de html het volledige scherm vullen */
-   font-family: 'Bree Serif', serif;
-   display: flex;
-   justify-content: center; /* Horizontaal centreren */
-   align-items: center; /* Verticaal centreren */
-   background-color: #f4f4f4;
-}
-
 .cycle-wrapper {
-   width: 80%;
+   width: 100%;
    position: relative;
-   margin: 0; /* Zorg ervoor dat er geen marges boven of onder de container zijn */
-   font-family: 'Bree Serif';
+   margin: 0;
+   font-family: 'Bree Serif', serif;
    padding: 10px;
-   background-color: #efcd8e;
-   display: flex; /* Flexbox om de inhoud van de wrapper te centreren */
-   justify-content: center; /* Horizontaal centreren */
-   align-items: center; /* Verticaal centreren */
-   text-align: center; /* Zorg ervoor dat tekst in het midden van de container staat */
+   text-align: center;
 }
 
 .rw-sentence {
    margin: 0;
-   display: inline-block; /* Zorgt ervoor dat de tekst samen wordt weergegeven */
-   text-align: center;
+   text-align: center; /* Horizontaal centreren van de zin */
    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
 }
 
@@ -206,5 +188,20 @@ body, html {
        -webkit-transform: translateY(0px);
        transform: translateY(0px);
    }
-   17% 
+   17% {
+       opacity: 1;
+       -webkit-transform: translateY(0px);
+       transform: translateY(0px);
+   }
+   20% {
+       opacity: 0;
+       -webkit-transform: translateY(30px);
+       transform: translateY(30px);
+   }
+   80% {
+       opacity: 0;
+   }
+   100% {
+       opacity: 0;
+   }
 }
