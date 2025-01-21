@@ -14,10 +14,14 @@ body, html {
    align-items: center; /* Horizontaal centreren */
 }
 
+.image-container {
+   width: 100%;
+}
+
 .intro {
    position: relative;
    text-align: center; /* Horizontaal centreren */
-   margin-top: 50px; /* De intro tekst iets hoger plaatsen */
+   margin-top: 20%; /* De intro tekst iets hoger plaatsen */
    width: 80%; /* Breedte van de intro tekst */
    font-size: 48px; /* Grotere tekstgrootte voor de intro */
    font-weight: bold; /* Vetgedrukte tekst */
