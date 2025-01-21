@@ -23,7 +23,7 @@ body, html {
    position: absolute;
    top: 32px; /* 3% margin from the top */
    left: 32px; /* 3% margin from the left */
-   width: 55px; /* Set a width for the logo (adjust as necessary) */
+   width: 75px; /* Set a width for the logo (adjust as necessary) */
    height: auto; /* Maintain aspect ratio */
 }
 
@@ -33,7 +33,7 @@ body, html {
    margin-top: 10%; /* De intro tekst iets hoger plaatsen */
    width: 80%; /* Breedte van de intro tekst */
    font-size: 48px; /* Grotere tekstgrootte voor de intro */
-   font-weight: bold; /* Vetgedrukte tekst */
+   font-weight: 400;
    color: #000000; /* Donkergrijze kleur voor de tekst */
 }
 
@@ -48,7 +48,7 @@ padding-top: 10%; /* De intro tekst iets hoger plaatsen */
 .download-button {
    background-color: #e91b59; /* Donkerroze achtergrond */
    color: white; /* Witte tekst */
-   padding: 32px 20px; /* Verticaal en horizontaal padding */
+   padding: 20px 28px; /* Verticaal en horizontaal padding */
    border-radius: 10px; /* Ronde hoeken */
    text-align: center; /* Centreer de tekst binnen de knop */
    font-size: 16px; /* Tekstgrootte */
