@@ -24,6 +24,14 @@ body, html {
    color: #000000; /* Donkergrijze kleur voor de tekst */
 }
 
+.inleiding {
+position: relative;
+text-align: center; /* Horizontaal centreren */
+width: 800px;
+font-size: 24px; /* Grotere tekstgrootte voor de intro */
+padding-top: 20%; /* De intro tekst iets hoger plaatsen */
+}
+
 .download-button {
    background-color: #e91b59; /* Donkerroze achtergrond */
    color: white; /* Witte tekst */
@@ -59,7 +67,7 @@ body, html {
 }
 
 .rw-sentence span {
-   color: #444;
+   color: #000000;
    font-size: 128px;
    font-weight: normal;
 }
